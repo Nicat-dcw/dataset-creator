@@ -1,70 +1,78 @@
-# LLM Dataset Generator
+LLM Dataset Generator
 
-This project is a JavaScript-based tool for generating a dataset of academic questions and answers in various fields using OpenAI's GPT-4 model. It is designed to create unique, diverse, and high-quality question-answer pairs for training large language models (LLMs) or for academic purposes.
+A JavaScript-based tool designed to generate datasets of academic question-and-answer pairs across various fields using OpenAI’s GPT-4 model. This tool aims to create unique, diverse, and high-quality content suitable for training large language models (LLMs) or for academic purposes, with a focus on Azerbaijani language content.
 
-## Requirements
+Features
 
-- Node.js version 14.0 or higher
-- npm (Node Package Manager)
+	•	Generate logical, subject-specific questions in mathematics, physics, chemistry, biology, history, literature, and more.
+	•	Save generated data in CSV format for easy integration with training or research pipelines.
+	•	Provides concise and clear answers to accompany each question.
 
-## Installation
+Requirements
 
-### 1. Clone the Repository
+	•	Node.js version 14.0 or higher
+	•	npm (Node Package Manager)
+	•	An OpenAI GPT-4 API key
 
-Clone this repository using the following command:
+Installation
 
-```bash
+1. Clone the Repository
+
+Clone the project to your local environment using the following command:
+
 git clone https://github.com/Nicat-dcw/dataset-creator.git
-```
+
 2. Install Dependencies
 
-Navigate to the project folder and install the required dependencies:
-```bash
+Navigate to the project folder and install the necessary packages:
+
 cd dataset-creator
 npm install
-```
 
-3. API Key and URL Configuration
+3. API Key and Base URL Configuration
 
-Since this project uses OpenAI's GPT-4 model, you need to provide your own API key and baseURL. Set the following configuration in the index.js file:
-
-apiKey: Your OpenAI API key.
-
-baseURL: The appropriate URL for OpenAI services.
-
-
-Update the code in index.js with your API credentials:
+This tool requires an OpenAI API key for accessing GPT-4. Update the index.js file with your API credentials:
 
 const client = new OpenAI({
     apiKey: 'YOUR-API-KEY',
     baseURL: 'https://api.openai.com/v1'
 });
 
-4. Running the Generator
+Replace YOUR-API-KEY with your OpenAI API key. If necessary, adjust the baseURL for OpenAI services.
 
-Once configured, run the following command to generate the dataset:
+4. Run the Generator
+
+Run the dataset generator with the following command:
 
 node index.js
 
-The program will prompt you to enter how many question-answer pairs you would like to generate. The dataset will be created and saved as a CSV file.
+The program will prompt you to specify the number of question-answer pairs to generate. The output will be saved as a CSV file in the project directory.
 
 Project Structure
 
-index.js: Main script that generates question-answer pairs and writes them to a CSV file.
+├── index.js          # Main script for generating datasets
+├── package.json      # Project configuration and dependencies
+└── README.md         # Project documentation
 
+How It Works
 
-
-Description
-
-This tool uses OpenAI's GPT-4 model to generate academic questions and answers across various subjects, such as mathematics, physics, chemistry, biology, history, literature, etc for Azerbaijani Language. The questions are designed to be logical and at an appropriate educational level. The generated dataset is saved in CSV format, making it easy to use for training models or further analysis.
-
-The dataset contains unique question-answer pairs with concise and clear answers, useful for various educational or research purposes.
+	1.	Leverages the OpenAI GPT-4 API to generate academic questions and answers.
+	2.	Supports multiple academic subjects tailored to the Azerbaijani language.
+	3.	Outputs data in CSV format, suitable for:
+	•	Training LLMs
+	•	Educational purposes
+	•	Research and analysis
 
 Contribution
 
-This project is open-source. Contributions are welcome! If you want to improve the tool, add new features, or fix bugs, feel free to open a pull request or issue on GitHub.
+This project is open-source, and contributions are encouraged!
+If you wish to:
+	•	Fix bugs
+	•	Add new features
+	•	Enhance functionality
+
+Feel free to create a pull request or open an issue on the GitHub repository.
 
 License
 
-This project is licensed under the MIT License.
-
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software.
