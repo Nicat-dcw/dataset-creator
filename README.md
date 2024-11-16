@@ -1,20 +1,20 @@
-LLM Dataset Generator
+# LLM Dataset Generator
 
 A JavaScript-based tool designed to generate datasets of academic question-and-answer pairs across various fields using OpenAI’s GPT-4 model. This tool aims to create unique, diverse, and high-quality content suitable for training large language models (LLMs) or for academic purposes, with a focus on Azerbaijani language content.
 
-Features
+## Features
 
 	•	Generate logical, subject-specific questions in mathematics, physics, chemistry, biology, history, literature, and more.
 	•	Save generated data in CSV format for easy integration with training or research pipelines.
 	•	Provides concise and clear answers to accompany each question.
 
-Requirements
+## Requirements
 
 	•	Node.js version 14.0 or higher
 	•	npm (Node Package Manager)
 	•	An OpenAI GPT-4 API key
 
-Installation
+##  Installation
 
 1. Clone the Repository
 
@@ -32,12 +32,12 @@ npm install
 3. API Key and Base URL Configuration
 
 This tool requires an OpenAI API key for accessing GPT-4. Update the index.js file with your API credentials:
-
+```js
 const client = new OpenAI({
     apiKey: 'YOUR-API-KEY',
     baseURL: 'https://api.openai.com/v1'
 });
-
+```
 Replace YOUR-API-KEY with your OpenAI API key. If necessary, adjust the baseURL for OpenAI services.
 
 4. Run the Generator
