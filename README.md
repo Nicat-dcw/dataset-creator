@@ -4,9 +4,9 @@ A JavaScript-based tool designed to generate datasets of academic question-and-a
 
 ## Features
 
-	•	Generate logical, subject-specific questions in mathematics, physics, chemistry, biology, history, literature, and more.
-	•	Save generated data in CSV format for easy integration with training or research pipelines.
-	•	Provides concise and clear answers to accompany each question.
+	- Generate logical, subject-specific questions in mathematics, physics, chemistry, biology, history, literature, and more.
+	- Save generated data in CSV format for easy integration with training or research pipelines.
+	-	Provides concise and clear answers to accompany each question.
 
 ## Requirements
 
