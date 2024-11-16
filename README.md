@@ -24,6 +24,7 @@ A **JavaScript-based tool** designed to generate datasets of academic question-a
 Clone the project to your local environment using the following command:  
 ```bash
 git clone https://github.com/Nicat-dcw/dataset-creator.git
+```
 
 2. Install Dependencies
 
