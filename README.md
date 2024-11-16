@@ -26,14 +26,14 @@ Clone the project to your local environment using the following command:
 git clone https://github.com/Nicat-dcw/dataset-creator.git
 ```
 
-2. Install Dependencies
+### 2. Install Dependencies
 
 Navigate to the project folder and install the necessary packages:
 
 cd dataset-creator
 npm install
 
-3. API Key and Base URL Configuration
+### 3. API Key and Base URL Configuration
 
 This tool requires an OpenAI API key for accessing GPT-4. Update the index.js file with your API credentials:
 
@@ -52,11 +52,6 @@ node index.js
 
 The program will prompt you to specify the number of question-answer pairs to generate. The output will be saved as a CSV file in the project directory.
 
-Project Structure
-
-├── index.js          # Main script for generating datasets
-├── package.json      # Project configuration and dependencies
-└── README.md         # Project documentation
 
 How It Works
 
@@ -80,6 +75,4 @@ Feel free to create a pull request or open an issue on the GitHub repository.
 License
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute this software.
-
-Start generating your custom academic dataset today!
 
