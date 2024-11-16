@@ -15,13 +15,14 @@ Clone this repository using the following command:
 
 ```bash
 git clone https://github.com/Nicat-dcw/dataset-creator.git
-
+```
 2. Install Dependencies
 
 Navigate to the project folder and install the required dependencies:
-
+```bash
 cd dataset-creator
 npm install
+```
 
 3. API Key and URL Configuration
 
